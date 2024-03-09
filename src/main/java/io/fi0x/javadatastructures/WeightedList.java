@@ -16,8 +16,7 @@ public class WeightedList<Type>
     /**
      * The main constructor of this class requires a {@link Random} to be able to return random elements later.
      *
-     * @param random The {@link Random} that should be used.
-     *               If {@code null}, a new {@link Random} will be generated.
+     * @param random The {@link Random} that should be used. If {@code null}, a new {@link Random} will be generated.
      */
     public WeightedList(Random random)
     {
@@ -39,12 +38,12 @@ public class WeightedList<Type>
         ITEMS.put(total, item);
     }
     /**
-     * This method returns an {@link Object} from the {@link WeightedList} with a specified weighted value.
-     * The weightIndex does not represent a specific weight of an entry.
-     * The element at the position of the parameter is dependent on the order in which elements got added
-     * and what the weights of the previous elements are.
+     * This method returns an {@link Object} from the {@link WeightedList} with a specified weighted value. The
+     * weightIndex does not represent a specific weight of an entry. The element at the position of the parameter is
+     * dependent on the order in which elements got added and what the weights of the previous elements are.
      *
      * @param weightIndex The number, at which the {@link WeightedList} should be searched.
+     *
      * @return The element that is stored at the weighted location.
      */
     public Type get(double weightIndex)
@@ -58,8 +57,8 @@ public class WeightedList<Type>
         return e.getValue();
     }
     /**
-     * This method returns a random element from the {@link WeightedList}.
-     * Elements with higher weights have a higher chance to get selected.
+     * This method returns a random element from the {@link WeightedList}. Elements with higher weights have a higher
+     * chance to get selected.
      *
      * @return A random element from the {@link WeightedList}.
      */
@@ -69,8 +68,8 @@ public class WeightedList<Type>
         return get(value);
     }
     /**
-     * This method returns a random element from the {@link WeightedList} and removes it.
-     * Elements with higher weights have a higher change to get selected.
+     * This method returns a random element from the {@link WeightedList} and removes it. Elements with higher weights
+     * have a higher change to get selected.
      *
      * @return A random element from the {@link WeightedList}, that is also removed by this method.
      */
@@ -93,6 +92,17 @@ public class WeightedList<Type>
         ITEMS.remove(value);
 
         return element;
+    }
+
+    /**
+     * Returns a version of this {@link WeightedList} that only contains the {@link Type} elements without their
+     * weights.
+     *
+     * @return A {@link List} of {@link Type} that contains all elements of this {@link WeightedList}.
+     */
+    public List<Type> toList()
+    {
+        return new ArrayList<>(ITEMS.values());
     }
 
     /**

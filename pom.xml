@@ -6,7 +6,7 @@
 
     <groupId>io.github.Fi0x</groupId>
     <artifactId>JavaDataStructures</artifactId>
-    <version>0.0.2</version>
+    <version>0.0.3</version>
     <name>JavaDataStructures</name>
     <description>A library that contains useful datastructures for java</description>
     <url>http://github.com/Fi0x/JavaDataStructures</url>
