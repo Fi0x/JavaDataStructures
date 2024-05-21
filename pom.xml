@@ -6,7 +6,7 @@
 
     <groupId>io.github.Fi0x</groupId>
     <artifactId>JavaDataStructures</artifactId>
-    <version>0.0.3</version>
+    <version>0.0.4</version>
     <name>JavaDataStructures</name>
     <description>A library that contains useful datastructures for java</description>
     <url>http://github.com/Fi0x/JavaDataStructures</url>
@@ -55,7 +55,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.12.1</version>
+                <version>3.13.0</version>
                 <configuration>
                     <source>19</source>
                     <target>19</target>
@@ -75,7 +75,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
-                <version>3.3.0</version>
+                <version>3.3.1</version>
                 <executions>
                     <execution>
                         <id>attach-sources</id>
@@ -101,7 +101,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-gpg-plugin</artifactId>
-                <version>3.1.0</version>
+                <version>3.2.4</version>
                 <executions>
                     <execution>
                         <id>sign-artifacts</id>
