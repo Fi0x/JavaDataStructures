@@ -6,6 +6,6 @@ A library that contains useful datastructures for java.
 <dependency>
   <groupId>io.github.Fi0x</groupId>
   <artifactId>JavaDataStructures</artifactId>
-  <version>0.0.5</version>
+  <version>0.1.0</version>
 </dependency>
 ```
